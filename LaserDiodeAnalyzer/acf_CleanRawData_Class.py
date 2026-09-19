@@ -27,7 +27,7 @@ class acf_RawDataProcessing(Mother):
         #####Liste der eingestellten stromwerte Erstellen####
         strom_index_list = []
         aktuellerstromwert = 0
-        for x in df[df.columns[0]].iteritems():     #erstellen der liste mit den verschiedenen, eingestellten stromwerten
+        for x in df[df.columns[0]].items():     #erstellen der liste mit den verschiedenen, eingestellten stromwerten
             strom = x[1]
             if strom != aktuellerstromwert and strom != None:
                 aktuellerstromwert = strom

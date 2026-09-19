@@ -10,7 +10,7 @@ from PeakPower_PulsBreite import PeakPower_Pulsbreite
 
 
 path_list = [
-                r'C:\Users\matte\Desktop\Auswertung GUI\testdaten'
+                r'C:\Users\matte\Desktop\Programmieren\MA_Auswertungstool\small_testdataset'
                 
             ]
 
