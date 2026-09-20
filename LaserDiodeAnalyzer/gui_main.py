@@ -4,6 +4,7 @@ from gui_class import GUI_ELEMENTS
 from pui_main import pui
 from opt_main import opt 
 from opt_main import normalize_opt_data_and_save_as_csv
+from Rf_main import Rf
 
 # ---- Elements ----
 
@@ -83,7 +84,8 @@ while True:
             if values['OPT_normieren']:
                 normalize_opt_data_and_save_as_csv(path)
             if values['-Rf-']:
-                print(Rf_span_list)
+                Rf(path)
+                #print(Rf_span_list)
               
         ordner_list = []
         window["-Ordner Liste-"].update(ordner_list)

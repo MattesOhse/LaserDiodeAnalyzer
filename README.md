@@ -8,4 +8,6 @@ This Python-bases analysis tool automates the evaluation of raw measurement data
 This repository contains two directories. In the directory `small_testdataset`, you will find a typical example of a raw dataset obtained during the electro-optical investigation of a pulsed laser diode.
 The dataset contains measurements of an intensity autocorrelation (ACF), the current-voltage-power characteristics of the laserdiode (PUI), the optical spectrum (S), and the radio-frequency spectrum pf the laser diode (RF).
 
+In The directory `LaserDiodeAnalyzer`, you will find the 
+
 

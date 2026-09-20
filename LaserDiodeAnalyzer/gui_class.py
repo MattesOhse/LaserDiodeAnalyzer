@@ -46,7 +46,7 @@ class GUI_ELEMENTS():
         return  [
                 sg.Frame('PUI',
                          [
-                             [sg.CBox('Auswerten', default=False, key ='PUI')]       
+                             [sg.CBox('Auswerten', default=True, key ='PUI')]       
                          ])
                 ]
                
@@ -55,8 +55,8 @@ class GUI_ELEMENTS():
         return [
                 sg.Frame('Optische Spektren',
                          [
-                             [sg.CBox('Auswerten', default=False, key='OPT')],            
-                             [sg.CBox("Normieren", default=False, key='OPT_normieren')]
+                             [sg.CBox('Auswerten', default=True, key='OPT')],            
+                             [sg.CBox("Normieren", default=True, key='OPT_normieren')]
                           ])
                ]
     

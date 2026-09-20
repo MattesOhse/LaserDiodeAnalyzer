@@ -153,7 +153,7 @@ def Rf(path_to_RawData):
                             spannungs_hilfs_df = pd.DataFrame([aktuelle_voltage_list], columns=fitdata_df.columns)
                             spannungs_hilfs_df.index=['Uabs']
                             #print(spannungs_hilfs_df)
-                            fitvalues_main_df = spannungs_hilfs_df.append(fitdata_df)
+                            fitvalues_main_df = pd.concat([spannungs_hilfs_df, fitdata_df])
                             #print(fitvalues_main_df)
                             dictionary.setdefault(key, []).append(fitvalues_main_df)
         #print(list_of_dictionarys)
