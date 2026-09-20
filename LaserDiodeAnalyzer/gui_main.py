@@ -56,19 +56,16 @@ while True:
         #print('aktuelle spanliste', aktuelle_span_list)
         Rf_span_list= Rf_span_list+aktuelle_span_list
         Rf_span_list = list(set(Rf_span_list))
-        #print('hööööööö',Rf_span_list)
         Rf_span_list_Listbox = Rf_span_list
         window['-Rf span-'].update(Rf_span_list_Listbox)
-        #print('Rf_spanlist ordner event ende', Rf_span_list)
 
     if event == '-Rf span-': # wenn man auf ein element der listbox klickt wird es gelöscht
         help_list = Rf_span_list
       
-        #print('Rf value: ', values['-Rf span-'][0])
         help_list.remove(values['-Rf span-'][0])
         Rf_span_list = help_list
         window['-Rf span-'].update(Rf_span_list)
-       #print('Rf Span nach modifikation',Rf_span_list)
+
     
     if event == 'Aktualisieren': #Aktualisieren der Rf span Listbox mit allen Rf spans, die in der ordnerliste gefunden werden
         alle_spans = []
@@ -78,7 +75,6 @@ while True:
         window['-Rf span-'].update(Rf_span_list)
     
     if event == "Auswertung Starten":
-        #print(ordner_list)
         for path in ordner_list:
             if values['PUI']:
                 pui(path)
@@ -87,7 +83,6 @@ while True:
             if values['OPT_normieren']:
                 normalize_opt_data_and_save_as_csv(path)
             if values['-Rf-']:
-                print('Hello Rf Auswertung')
                 print(Rf_span_list)
               
         ordner_list = []
