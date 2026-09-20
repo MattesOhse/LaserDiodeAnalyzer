@@ -5,6 +5,7 @@ from pui_main import pui
 from opt_main import opt 
 from opt_main import normalize_opt_data_and_save_as_csv
 from Rf_main import Rf
+from acf_main import ACF
 
 # ---- Elements ----
 
@@ -21,6 +22,7 @@ full_layout = [
                 sg.Frame('optionen',
                                     [[
                                        gui_elements.pui_option_element()[0],
+                                       gui_elements.ACF_option_element()[0],
                                        gui_elements.opt_option_element()[0],
                                        gui_elements.Rf_option_element()[0]
                                     ]])
@@ -30,7 +32,7 @@ full_layout = [
                ]
 
 
-window = sg.Window(title="Jiminy", layout=full_layout,grab_anywhere=False)#, margins=(100,50)
+window = sg.Window(title="LaserDiodeAnalyzer", layout=full_layout,grab_anywhere=False)
 
 # ---- Main Loop ----
 ordner_list = []
@@ -79,6 +81,8 @@ while True:
         for path in ordner_list:
             if values['PUI']:
                 pui(path)
+            if values['ACF']:
+                ACF(path)
             if values['OPT']:
                 opt(path)         
             if values['OPT_normieren']:

@@ -50,6 +50,14 @@ class GUI_ELEMENTS():
                          ])
                 ]
                
+    def ACF_option_element(self):
+        return [
+                sg.Frame('ACF',
+                         [
+                             [sg.CBox('Auswerten', default=True, key ='ACF')]       
+                         ])
+                ]
+
     
     def opt_option_element(self):
         return [
@@ -100,6 +108,10 @@ class GUI_ELEMENTS():
                 sg.Frame('PUI',
                          [
                              [sg.CBox('Auswerten', default=True, key ='PUI')]       
+                         ]),
+                sg.Frame('ACF',
+                         [
+                             [sg.CBox('Auswerten', default=True, key ='ACF')]       
                          ]),
                sg.Frame('Optische Spektren',
                          [
