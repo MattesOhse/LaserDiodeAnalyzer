@@ -38,7 +38,9 @@ In the following sections, I will explain the physical and mathematical backgrou
 The optical spectrum is measured with a spectrum analyzer. The spectrum analyzer measures the Lightintensity (in dBm) over a wavelength span.
 The follwing figure shows a typical normalized optical laser diode spectrum. In thes figure are the typical characteristics (the center wavelength $\lambda_p$ and the 3dB Bandwith) marked.  
 
-![Typical optical spectrum of an Laser Diode. Marked are the 3dB Bandwidth, and the Wavelength with highest Intensity](README_pictures/opt_Beispielspektrum.png)
+<p align="center">
+  <img src="README_pictures/opt_Beispielspektrum.png" width="400" alt="Typical optical spectrum of a laser diode. The 3 dB bandwidth and the wavelength with the highest intensity are marked.">
+</p>
 
 
 
