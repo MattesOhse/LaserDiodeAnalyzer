@@ -46,7 +46,8 @@ The following figure shows a typical normalized optical spectrum of a pulsed las
 For every measured spectrum (reminder: we sweep the excitation current and measure a spectrum at each current step), the program determines the peak wavelength and the 3 dB bandwidth using the following procedure:
 
 1. **Convert the raw data into a CSV file**<br>
-    First, the program converts the raw data into a CSV file and removes all unnecessary information contained in the raw `.dat` file. This file can be found in the directory `Auswertung/Opt/.../`under the name `opt_cleanRawData`.\\
+    First, the program converts the raw data into a CSV file and removes all unnecessary information contained in the raw `.dat` file. This file can be found in the directory `Auswertung/Opt/.../`under the name `opt_cleanRawData`.
+    
     In a second step, the program reshapes the data and creates another CSV file named `opt_x.xxV_PlotDaten`. In Column A, you will find the wavelength. The first row contains the excitation current, and below each excitation current, you will find the measured (unnoralized) intensity at the corresponding wavelength. 
 
 
