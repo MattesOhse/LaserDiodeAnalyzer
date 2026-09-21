@@ -61,7 +61,13 @@ For every measured spectrum (reminder: we sweep the excitation current and measu
     To estimate the 3 dB bandwidth, the program first divides the spectrum at the peak wavelength into a left and a right part. It then subtracts 3 dB from the peak intensity to determine the target intensity corresponding to the 3 dB level.   
     For both the left and the right part of the spectrum, the program searches for the measured wavelength whose intensity is closest to this target intensity. The two neighboring data points around this wavelength are then used to perform a linear fit. From this fit, the program determines the slope and y-intercept of the line and uses them to estimate the wavelength at which the spectrum exactly reaches the 3 dB level.   
     This procedure is performed independently for the left and the right sides of the spectrum, resulting in two 3 dB wavelengths. The 3 dB bandwidth is then calculated as the difference between these two wavelengths:   
-    $$\Delta\lambda_{3,\mathrm{dB}} = \lambda_{3,\mathrm{dB,right}} - \lambda_{3,\mathrm{dB,left}}$$  
+    $$
+    \Delta\lambda_{3,\mathrm{dB}} 
+    = 
+    \lambda_{3,\mathrm{dB,right}} 
+    - 
+    \lambda_{3,\mathrm{dB,left}}
+    $$  
     These estimated 3 dB bandwidths of all measured spectra are saved in the CSV file `opt_3dB_Bandbreite`in the directory `Auswertung/`.
     
 
