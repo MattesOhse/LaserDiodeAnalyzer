@@ -24,10 +24,10 @@ When the analysis is complete, you will find a directory called `Auswertung`insi
 
 If you run the full analysis with all chckboxes selected, you will get the following results:
 
-1. **The dirctories `ACF`, `Opt`, `PUI` and `RF`**
+1. **The dirctories `ACF`, `Opt`, `PUI` and `RF`**<br>
     These directories contain the analysis results for the different measurements.
 
-2. **A large number of CSV files**
+2. **A large number of CSV files**<br>
     These files contain the most relevant results of the analyses for the different measurements.
 
 In the following sections, I will explain the physical and mathematical background of these results for the different measurements and indicate the correspondinng files in which these results cen be found.
