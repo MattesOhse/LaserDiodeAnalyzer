@@ -19,7 +19,7 @@ Press the **"Auswertung Starten"** button to start the analysis.
 ### Backgrund to the experimental measurement
 First, we apply a constant voltage to the absorber of the laser Diode. To investigate the electro-optical characteristics of the laser diode, we apply an excitation current to the active region and sweep this current. For each current step, we measure the optical output power, the opptical spectrum, the intensity autocorrelation of the light pulses, and the raidio-frequeny spectrum over different frequency spans.
 
-#### The Results
+### The Results
 When the analysis is complete, you will find a directory called `Auswertung`inside the directory containing the raw measurement data. Depending on which checkboxes you selected, you will find the corresponding analysis results.
 
 If you run the full analysis with all chckboxes selected, you will get the following results:
@@ -34,13 +34,23 @@ In the following sections, I will explain the physical and mathematical backgrou
 
 **Note:** The results are obtained from measurement data and not from theoretical simulations. Therefor, this program does not generate graphs of the data. The reason is that the graphs usually need to be individually modified because each diode has its own characteristics. Therefore, a plotting program such as Origin is essential for visualizing the data appropriatley.
 
-#### The optical Spectrum 
-The optical spectrum is measured with a spectrum analyzer. The spectrum analyzer measures the Lightintensity (in dBm) over a wavelength span.
-The follwing figure shows a typical normalized optical laser diode spectrum. In thes figure are the typical characteristics (the center wavelength $\lambda_p$ and the 3dB Bandwith) marked.  
+### The optical Spectrum 
+The optical spectrum is measured unsing a spectrum analyzer. The spectrum analyzer measures the light intensity (in dBm) over a specified wavelength range.
+
+The following figure shows a typical normalized optical spectrum of a pulsed laser diode. The characteristic quantities, namely the peak wavelength $\lambda_p$ and the 3 dB bandwidth, are marked.
 
 <p align="center">
-  <img src="README_pictures/opt_Beispielspektrum.png" width="400" alt="Typical optical spectrum of a laser diode. The 3 dB bandwidth and the wavelength with the highest intensity are marked.">
+  <img src="README_pictures/opt_Beispielspektrum.png" width="400" alt="Typical optical spectrum of a pulsed laser diode. The 3 dB bandwidth and the peak wavelength are marked.">
 </p>
+
+For every measured spectrum (reminder: we sweep the excitation current and measure a spectrum at each current step), the program determines the peak wavelength and the 3 dB bandwidth using the following procedure:
+
+1. **Convert the raw data into a CSV file**<br>
+    First, the program converts the raw data into a CSV file and removes all unnecessary information contained in the raw `.dat` file. This file can be found in the directory `Auswertung/Opt/.../`under the name `opt_cleanRawData`.\\
+    In a second step, the program reshapes the data and creates another CSV file named `opt_x.xxV_PlotDaten`. In Column A, you will find the wavelength. The first row contains the excitation current, and below each excitation current, you will find the measured (unnoralized) intensity at the corresponding wavelength. 
+
+
+
 
 
 
