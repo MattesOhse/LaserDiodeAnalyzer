@@ -17,7 +17,7 @@ Press the **"Auswertung Starten"** button to start the analysis.
 ## Discription of what this Program does 
 
 ### Backgrund to the experimental measurement
-First, we apply a constant voltage to the absorber of the laser Diode. To investigate the electro-optical characteristics of the laser diode, we apply an excitation current to the active region and sweep this current. For each current step, we measure the optical output power, the opptical spectrum,the intensity autocorrelation of the light pulses, and the raidio-frequeny spectrum over different frequency spans.
+First, we apply a constant voltage to the absorber of the laser Diode. To investigate the electro-optical characteristics of the laser diode, we apply an excitation current to the active region and sweep this current. For each current step, we measure the optical output power, the opptical spectrum, the intensity autocorrelation of the light pulses, and the raidio-frequeny spectrum over different frequency spans.
 
 #### The Results
 When the analysis is complete, you will find a directory called `Auswertung`inside the directory containing the raw measurement data. Depending on which checkboxes you selected, you will find the corresponding analysis results.
@@ -32,7 +32,13 @@ If you run the full analysis with all chckboxes selected, you will get the follo
 
 In the following sections, I will explain the physical and mathematical background of these results for the different measurements and indicate the correspondinng files in which these results cen be found.
 
+**Note:** The results are obtained from measurement data and not from theoretical simulations. Therefor, this program does not generate graphs of the data. The reason is that the graphs usually need to be individually modified because each diode has its own characteristics. Therefore, a plotting program such as Origin is essential for visualizing the data appropriatley.
 
+#### The optical Spectrum 
+The optical spectrum is measured with a spectrum analyzer. The spectrum analyzer measures the Lightintensity (in dBm) over a wavelength span.
+The follwing figure shows a typical normalized optical laser diode spectrum. In thes figure are the typical characteristics (the center wavelength $\lambda_p$ and the 3dB Bandwith) marked.  
+
+![Typical optical spectrum of an Laser Diode. Marked are the 3dB Bandwidth, and the Wavelength with highest Intensity](README_pictures/opt_Beispielspektrum.png)
 
 
 
