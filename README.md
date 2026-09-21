@@ -14,9 +14,9 @@ To start the analysis, run the script `gui_main.py`. A graphical user interface 
 Using the checkboxes , you can select which types of measurement data you want to analyze (PUI, ACF, optische Spektren, Rf Spektren). 
 Press the **"Auswertung Starten"** button to start the analysis.
 
-### Discription of what this Program does 
+## Discription of what this Program does 
 
-## Backgrund to the experimental measurement
+### Backgrund to the experimental measurement
 First, we apply a constant voltage to the absorber of the laser Diode. To investigate the electro-optical characteristics of the laser diode, we apply an excitation current to the active region and sweep this current. For each current step, we measure the optical output power, the opptical spectrum,the intensity autocorrelation of the light pulses, and the raidio-frequeny spectrum over different frequency spans.
 
 #### The Results
@@ -25,10 +25,10 @@ When the analysis is complete, you will find a directory called `Auswertung`insi
 If you run the full analysis with all chckboxes selected, you will get the following results:
 
 1. **The dirctories `ACF`, `Opt`, `PUI` and `RF`**
-These directories contain the analysis results for the different measurements.
+    These directories contain the analysis results for the different measurements.
 
 2. **A large number of CSV files**
-These files contain the most relevant results of the analyses for the different measurements.
+    These files contain the most relevant results of the analyses for the different measurements.
 
 In the following sections, I will explain the physical and mathematical background of these results for the different measurements and indicate the correspondinng files in which these results cen be found.
 
