@@ -65,7 +65,21 @@ For every measured spectrum (reminder: we sweep the excitation current and measu
     These estimated 3 dB bandwidths of all measured spectra are saved in the CSV file `opt_3dB_Bandbreite`in the directory `Auswertung/`.
     
 
+### The Radio Frequency Spectrum
 
+The raido frequency (RF) spectrum is measured using a swept spectrum analyzer. The RF spectrum analyzer measures the signal intensity (in dBm) over a specified frequency range. The following figure shows a typical overview spectrum with a frequency span of 30 GHz.
+
+<p align="center">
+  <img src="README_pictures/Rf_beispiel.png" width="400" alt="Typical RF overview spectrum of a pulsed laser diode.">
+</p>
+
+The test dataset contains three RF spectra measured over different frequency spans: \
+$1,0\cdot 10^{8}$ Hz; $6,3\cdot 10^{9}$ Hz and $3,0\cdot 10^{10}$ Hz. \
+During the measurements, the exication current was swept from 190 mA to 700 mA in steps of 10 mA. A spectrum was acquired for each frequency span at every current step.
+
+1. **Convert the raw data into a CSV file** <br>
+    First, the program converts the raw data of the three measurements into a CSV file and removes all unnecessary information contained in the raw `.dat` files. This files can be found in the directory `Auswertung/Rf/...` under the name `Rf_cleanRawData`.
+     
 
 
 
